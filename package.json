@@ -1,0 +1,31 @@
+{
+  "name": "gchat_services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy:reminder-bot-receiver": "lerna run deploy --stream --scope=\"reminder-bot-receiver\"",
+    "deploy:reminder-bot-sender": "lerna run deploy --stream --scope=\"reminder-bot-sender\"",
+    "deploy:reminder-bot-scheduler": "lerna run deploy --stream --scope=\"reminder-bot-scheduler\"",
+    "deploy:reminder-bot-checker": "lerna run deploy --stream --scope=\"reminder-bot-checker\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/juan-or/gChat_services.git"
+  },
+  "keywords": [
+    "gchat",
+    "services",
+    "amazing"
+  ],
+  "author": "Juan Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juan-or/gChat_services/issues"
+  },
+  "homepage": "https://github.com/juan-or/gChat_services#readme",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}

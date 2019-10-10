@@ -1,0 +1,24 @@
+{
+  "name": "reminder-bot-checker",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Juan Ortega <juan@optimusride.com>",
+  "homepage": "https://github.com/juan-or/gChat_services/tree/master/packages/reminder-bot-checker#readme",
+  "license": "ISC",
+  "main": "lib/reminder-bot-checker.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "deploy": "gcloud functions deploy reminderBotChecker --runtime nodejs8 --trigger-topic reminder-bot-checker",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^2.3.0",
+    "@google-cloud/pubsub": "^1.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "reminder-bot-sender",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Juan Ortega <juan@optimusride.com>",
+  "homepage": "https://github.com/juan-or/gChat_services/tree/master/packages/reminder-bot-sender#readme",
+  "license": "ISC",
+  "main": "lib/reminder-bot-sender.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "deploy": "gcloud functions deploy reminderBotSender --runtime nodejs8 --trigger-topic reminder-bot-messages-out --env-vars-file .env.yaml",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "googleapis": "^43.0.0"
+  }
+}
